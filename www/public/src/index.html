@@ -6,12 +6,125 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SANTEL</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js"></script>
+        <script>
+            $( document ).ready(function() {
+
+                $('.work-item').mouseenter(function(){
+                    $('.mask',this).fadeIn(400);
+                    $('img',this).css('transform','scale(1.1)');
+                });
+                $('.work-item').mouseleave(function(){
+                    $('.mask',this).fadeOut(400);
+                    $('img',this).css('transform','scale(1)');
+                });
+
+                $('.btn-gnb').on('click', function () {
+                    alert('메롱');
+                });
+
+            });
+        </script>
     </head>
     <body>
-        <p>123</p>
+        <div id="header">
+            <a href="#" class="logo"><img src="/img/common/logo_santel.png" alt="SANTEL LOGO"></a>
+            <a href="#" class="btn-gnb"><img src="/img/common/btn_gnb.jpg" alt="메뉴버튼"></a>
+        </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/main.js"></script>
+        <div class="wrap">
+            <div class="content-inner">
+
+                <div class="content-title">
+                    <h2>WORKS</h2>
+                </div>
+
+                <div class="article-work">
+                    <ul>
+                        <li class="work-item" onclick="location.href='/page/work/work_detail.html'">
+                            <div class="work-img">
+                                <img src="/img/work/thumb_work_01.jpg" alt="">
+                                <div class="mask">
+                                    <span>MORE DETAILS</span>
+                                </div>
+                            </div>
+                            <div class="work-title">
+                                <h3>피에르파브르 공식 온라인 쇼핑몰</h3>
+                                <h4>Jun 22. 2017</h4>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <div class="work-img">
+                                <img src="/img/work/thumb_work_01.jpg" alt="">
+                                <div class="mask">
+                                    <span>MORE DETAILS</span>
+                                </div>
+                            </div>
+                            <div class="work-title">
+                                <h3>피에르파브르 공식 온라인 쇼핑몰</h3>
+                                <h4>Jun 22. 2017</h4>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <div class="work-img">
+                                <img src="/img/work/thumb_work_01.jpg" alt="">
+                                <div class="mask">
+                                    <span>MORE DETAILS</span>
+                                </div>
+                            </div>
+                            <div class="work-title">
+                                <h3>피에르파브르 공식 온라인 쇼핑몰</h3>
+                                <h4>Jun 22. 2017</h4>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <div class="work-img">
+                                <img src="/img/work/thumb_work_01.jpg" alt="">
+                                <div class="mask">
+                                    <span>MORE DETAILS</span>
+                                </div>
+                            </div>
+                            <div class="work-title">
+                                <h3>피에르파브르 공식 온라인 쇼핑몰</h3>
+                                <h4>Jun 22. 2017</h4>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <div class="work-img">
+
+                                <div class="mask">
+                                    <span>MORE DETAILS</span>
+                                </div>
+                            </div>
+                            <div class="work-title">
+                                <h3>피에르파브르 공식 온라인 쇼핑몰</h3>
+                                <h4>Jun 22. 2017</h4>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <div class="work-img">
+
+                                <div class="mask">
+                                    <span>MORE DETAILS</span>
+                                </div>
+                            </div>
+                            <div class="work-title">
+                                <h3>피에르파브르 공식 온라인 쇼핑몰</h3>
+                                <h4>Jun 22. 2017</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="#" class="btn-top"><img src="/img/common/btn_top.png" alt=""></a>
+            <p>#202, SINDO BUILDING 2F, 11-4,<br>TEHERAN-RO 8-GIL,GANGNAM-GU, SEOUL, KOREA</p>
+            <a href="tel:+82.2.501.6172">Tel  +82.2.501.6172</a>
+            <span>© SANTEL.</span>
+        </div>
+
     </body>
 </html>

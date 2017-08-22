@@ -1,0 +1,26 @@
+.content-inner{
+    width: 1280px;
+    position: relative;
+    margin: 0 auto;
+}
+
+[class*='article-']{
+    padding: 70px 0;
+}
+[class*='left-']{
+    float: left;
+}
+[class*='right-']{
+    float: right;
+}
+
+%clfix{
+    &::after{
+        content:'';
+        display:block;
+        height:0;
+        font-size:0;
+        clear:both;
+        visibility:hidden;
+    }
+}

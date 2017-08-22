@@ -1,0 +1,276 @@
+@import 'fonts.scss';
+@import 'reset.scss';
+@import 'mixin.scss';
+@import 'common.scss';
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/*header*/
+#header{
+    position: relative;
+    height: 120px;
+    width: 100%;
+    min-width: 1280px;
+    background-color: #fff;
+    // border-bottom: 1px solid #ddd;
+    .logo{
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 45px;
+        img{
+            display: inline-block;
+        }
+    }
+    .btn-gnb{
+        display: inline-block;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        img{
+            display: inline-block;
+        }
+    }
+}
+
+/*wrap*/
+.wrap{
+    padding: 60px 0;
+}
+
+/*footer*/
+#footer{
+    height: 240px;
+    width: 100%;
+    padding-top: 60px;
+    background: #000;
+    text-align: center;
+    .btn-top{
+        display: inline-block;
+        margin-bottom: 35px;
+        img{
+            display: block;
+        }
+    }
+    a{
+        font-size: 12px;
+        font-weight: 200;
+        color: #666;
+        letter-spacing: 0.07em;
+    }
+    p{
+        font-size: 12px;
+        font-weight: 200;
+        color: #666;
+        letter-spacing: 0.07em;
+        line-height: 1.6em;
+        padding-bottom: 20px;
+    }
+    span{
+        display: block;
+        font-size: 12px;
+        font-weight: 200;
+        color: #777;
+        letter-spacing: 0.07em;
+        padding-top: 35px;
+    }
+}
+
+/*content title*/
+.content-title{
+    text-align: center;
+    padding: 25px 0;
+    h2{
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 0.7em;
+    }
+}
+.content-title-detail{
+    height: 120px;
+    text-align: left;
+    // border-bottom: 1px solid #000;
+    h2{
+        font-size: 36px;
+        font-weight: 300;
+    }
+    H4{
+        padding-top: 15px;
+        font-size: 12px;
+        font-weight: 100;
+        letter-spacing: 0.07em;
+        color: #777;
+    }
+}
+
+/*article work*/
+.article-work{
+    ul{
+        overflow: hidden;
+        li{
+            float: left;
+            width: 380px;
+            margin: 0 70px 40px 0;
+            cursor: pointer;
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+            .work-img{
+                position: relative;
+                overflow: hidden;
+                width: 380px;
+                height: 380px;
+                background-color: #000;
+                img{
+                    width: 100%;
+                    display: block;
+                    transform: scale(1);
+                    transition: .3s ease-in-out;
+                }
+                .mask{
+                    display: none;
+                    content: "";
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width: 380px;
+                    height: 380px;
+                    background: rgba(0, 0, 0, 0.4);
+                    z-index: 5;
+                    span{
+                        display: inline-block;
+                        width: 150px;
+                        height: 40px;
+                        line-height: 40px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -20px 0 0 -75px;
+                        border: 1px solid #fff;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .work-title{
+                padding-top: 20px;
+                h3{
+                    font-size: 14px;
+                }
+                h4{
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: #777;
+                }
+            }
+        }
+    }
+}
+
+/*work detail*/
+.article-work-detail{
+    overflow: hidden;
+    padding: 60px 0 90px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    .left-wd{
+        width: 940px;
+        .wd_img{
+            overflow: hidden;
+            width: 940px;
+            height: 450px;
+            margin-bottom: 50px;
+            img{
+                display: block;
+            }
+        }
+        .wd_text{
+            h3{
+                font-size: 24px;
+                font-weight: 300;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+                color: #666;
+                line-height: 1.5em;
+            }
+        }
+    }
+    .right-wd{
+        width: 280px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #000;
+        .wd_desc{
+            h4{
+                font-size: 18px;
+                font-weight: 300;
+                padding-bottom: 15px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+                color: #666;
+                line-height: 1.4em;
+                padding-bottom: 20px;
+            }
+            ul{
+                li{
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #666;
+                    span{
+                        color: #aaa;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*pager*/
+.pager{
+    overflow: hidden;
+    padding: 40px 0;
+    margin-bottom: 100px;
+    .left-btn-prev{
+        img{
+            float: left;
+            display: inline-block;
+        }
+        div{
+            float: left;
+            display: inline-block;
+            font-size: 14px;
+            color: #666;
+            padding: 23px 15px;
+            span{
+                color: #aaa;
+                em{
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+    .right-btn-next{
+        img{
+            float: right;
+            display: inline-block;
+        }
+        div{
+            float: right;
+            display: inline-block;
+            font-size: 14px;
+            color: #666;
+            padding: 23px 15px;
+            span{
+                color: #aaa;
+                em{
+                    padding: 0 8px;
+                }
+            }
+        }
+    }
+}
